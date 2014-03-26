@@ -76,7 +76,7 @@
         (expt chamber-diameter 2))))
 (defvar chamber-length
   (/ chamber-volume
-     (* 1.1 chamber-area))) ;; 1.1 is actually 1/10
+     (* 1.1 chamber-area)))
 (defvar chamber-wall-thickness  ;; Tw = PD/16000
   (/ (* pressure-chamber  chamber-diameter)
      16000))

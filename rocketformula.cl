@@ -1,10 +1,22 @@
-(defconstant *R* 65)
 (defconstant *gravity* 32.2)
-(defvar gamma 1.2)
-(defvar thrust 20.0)
-(defvar Isp 260.0)
+
+;(defconstant *R*
+;  (/ *R_bar* M))
+;(defconstant *R_bar* 1545.32) ; R_bar is 1545.32 ft-lb/lb(deg)R.
+;(defvar M molar-mass) ; Molar Mass of combustion products
+
+(defconstant *R* 65) ; gas constant of gaseous oxygen and hydrocarbon(gasoline) combustion.
+
+(defvar gamma 1.2) ; Gamma is about 1.2 for the products of combustion of gaseous oxygen/hydrocarbon(gasoline).
+
+(defvar thrust 20.0) ; arbitrary starting value - will be user defined later.
+
+(defvar Isp 260.0) ; defined as thrust divided by total propellent flow rate
+
 (defvar pressure-atmosphere 14.7)
-(defvar mixture-ratio 2.5)
+
+(defvar mixture-ratio 2.5) ; example starting value for oxygen/hydrocarbon combustion
+
 (defvar total-propellant
   (/ thrust Isp))
 (defvar fuel

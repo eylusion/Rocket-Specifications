@@ -1,9 +1,9 @@
-(defconstant *gravity* 32.2)
-
 ;(defconstant *R*
 ;  (/ *R_bar* M))
 ;(defconstant *R_bar* 1545.32) ; R_bar is 1545.32 ft-lb/lb(deg)R.
 ;(defvar M molar-mass) ; Molar Mass of combustion products
+
+(defconstant *gravity* 32.2)
 
 (defconstant *R* 65) ; gas constant of gaseous oxygen and hydrocarbon(gasoline) combustion.
 

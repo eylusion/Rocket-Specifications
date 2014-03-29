@@ -189,9 +189,9 @@
 
 (defun main ()
   (progn
-    (princ "Application to list design specifications for a small copper rocket engine.")
+    (princ "Application to list design specifications for a small copper rocket engine." )
     (princ #\newline)
-    (princ "gonna over simplify the shit out of everything" )
+    (princ "Gonna over simplify the shit out of everything")
     (princ #\newline)
     (princ "example calculations for 300psi chamber pressure and a thrust of 20 lbs" )
     (princ #\newline)
@@ -221,4 +221,7 @@
     (princ #\newline)
     (princ "these starting values will be hard coded for now" )
     (princ #\newline)
+    (princ (format nil "Total Propellent flow rate ~D in pounds per second." Wt))
+    (princ (format nil "Total Fuel flow rate ~D in pounds per second." Wf))
+    (princ (format nil "Total Oxidizer \(Gaseous Oxygen\) flow rate ~D in pounds per second." Wo))
     ))

@@ -171,7 +171,7 @@
 (defvar w
   (/ Q DeltaT))
 
-;; Step 13
+;; Step 13 (Errors in resource material so I cannot double check my equations leaving this out for now.
 ;; Annular Flow Passage of coolant afp
 ;; D1 is the outer diameter of the combustion chamber and D2 is the inner diameter of the cooling jacket
 ;;(defvar D1
@@ -181,3 +181,7 @@
 ;;  (sqrt (/ (* 4 w)
 ;;           (+ (* vw wrho pi)
 ;;              (expt d1 2)))))
+;; afp = ((pi)/4) (D22 - D12) 
+;; (defvar afp
+;;    (*  (/ pi 4)
+;;        (- (expt D2 2) (expt D1 1))))
